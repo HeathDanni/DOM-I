@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const navBar = document.querySelectorAll("a");
 
+
 navBar[0].innerHTML = siteContent["nav"]["nav-item-1"];
 navBar[1].innerHTML = siteContent["nav"]["nav-item-2"];
 navBar[2].innerHTML = siteContent["nav"]["nav-item-3"];
@@ -88,3 +89,18 @@ paragraphs[5].style.width = "150px";
 paragraphs[6].innerText = siteContent["contact"]["phone"];
 paragraphs[7].innerText = siteContent["contact"]["email"];
 paragraphs[8].innerText = siteContent["footer"]["copyright"];
+
+navBar.forEach(el => el.style.color = "green");
+
+const homeNav = document.createElement('a');
+homeNav.innerText = "Home";
+homeNav.style.color = 'green';
+
+const gamesNav = document.createElement('a');
+gamesNav.innerText = "Games";
+gamesNav.style.color = 'green';
+
+const navMenu = document.querySelector("nav");
+
+navMenu.prepend(homeNav);
+navMenu.appendChild(gamesNav);
