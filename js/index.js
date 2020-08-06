@@ -54,6 +54,8 @@ navBar[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
 const heading = document.querySelector("h1");
 heading.innerHTML = siteContent["cta"]["h1"];
+heading.style.width = "175px";
+heading.style.marginRight = "60px";
 
 const btn = document.querySelector("button");
 btn.innerHTML = siteContent["cta"]["button"];
@@ -73,3 +75,16 @@ mainImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const paragraphs = document.querySelectorAll("p");
+
+paragraphs[0].innerText = siteContent["main-content"]["features-content"];
+paragraphs[1].innerText = siteContent["main-content"]["about-content"];
+paragraphs[2].innerText = siteContent["main-content"]["services-content"];
+paragraphs[3].innerText = siteContent["main-content"]["product-content"];
+paragraphs[4].innerText = siteContent["main-content"]["vision-content"];
+paragraphs[5].innerText = siteContent["contact"]["address"];
+paragraphs[5].style.width = "150px";
+paragraphs[6].innerText = siteContent["contact"]["phone"];
+paragraphs[7].innerText = siteContent["contact"]["email"];
+paragraphs[8].innerText = siteContent["footer"]["copyright"];
