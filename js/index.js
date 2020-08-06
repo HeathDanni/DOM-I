@@ -41,5 +41,11 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-let codeImage = document.getElementById("cta-img");
-codeImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+const heading = document.querySelector("h1");
+heading.innerContent = "ahahah";
+
+const mainImage = document.getElementById("cta-img");
+mainImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
