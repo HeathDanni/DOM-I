@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const heading = document.querySelector("h1");
-heading.innerContent = "ahahah";
+heading.innerHTML = siteContent["cta"]["h1"];
 
 const mainImage = document.getElementById("cta-img");
 mainImage.setAttribute('src', siteContent["cta"]["img-src"]);
