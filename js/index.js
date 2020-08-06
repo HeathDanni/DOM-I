@@ -42,7 +42,15 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const navBar = document.querySelectorAll("a");
-navBar.innerContent = siteContent["nav"]["nav-item-1"];
+
+navBar[0].innerHTML = siteContent["nav"]["nav-item-1"];
+navBar[1].innerHTML = siteContent["nav"]["nav-item-2"];
+navBar[2].innerHTML = siteContent["nav"]["nav-item-3"];
+navBar[3].innerHTML = siteContent["nav"]["nav-item-4"];
+navBar[4].innerHTML = siteContent["nav"]["nav-item-5"];
+navBar[5].innerHTML = siteContent["nav"]["nav-item-6"];
+
+// navBar.forEach(el => el.innerHTML = siteContent["nav"][]);
 
 const heading = document.querySelector("h1");
 heading.innerHTML = siteContent["cta"]["h1"];
