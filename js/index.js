@@ -44,12 +44,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 const navBar = document.querySelectorAll("a");
 
 
-navBar[0].innerHTML = siteContent["nav"]["nav-item-1"];
-navBar[1].innerHTML = siteContent["nav"]["nav-item-2"];
-navBar[2].innerHTML = siteContent["nav"]["nav-item-3"];
-navBar[3].innerHTML = siteContent["nav"]["nav-item-4"];
-navBar[4].innerHTML = siteContent["nav"]["nav-item-5"];
-navBar[5].innerHTML = siteContent["nav"]["nav-item-6"];
+navBar[0].innerText = siteContent["nav"]["nav-item-1"];
+navBar[1].innerText = siteContent["nav"]["nav-item-2"];
+navBar[2].innerText = siteContent["nav"]["nav-item-3"];
+navBar[3].innerText = siteContent["nav"]["nav-item-4"];
+navBar[4].innerText = siteContent["nav"]["nav-item-5"];
+navBar[5].innerText = siteContent["nav"]["nav-item-6"];
 
 // navBar.forEach(el => el.innerHTML = siteContent["nav"][]);
 
@@ -59,7 +59,7 @@ heading.style.width = "175px";
 heading.style.marginRight = "60px";
 
 const btn = document.querySelector("button");
-btn.innerHTML = siteContent["cta"]["button"];
+btn.innerText = siteContent["cta"]["button"];
 
 const heading4 = document.querySelectorAll("h4");
 
@@ -104,3 +104,6 @@ const navMenu = document.querySelector("nav");
 
 navMenu.prepend(homeNav);
 navMenu.appendChild(gamesNav);
+
+
+//stretch updating styles
