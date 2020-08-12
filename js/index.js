@@ -39,4 +39,71 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+const navBar = document.querySelectorAll("a");
+
+
+navBar[0].innerText = siteContent["nav"]["nav-item-1"];
+navBar[1].innerText = siteContent["nav"]["nav-item-2"];
+navBar[2].innerText = siteContent["nav"]["nav-item-3"];
+navBar[3].innerText = siteContent["nav"]["nav-item-4"];
+navBar[4].innerText = siteContent["nav"]["nav-item-5"];
+navBar[5].innerText = siteContent["nav"]["nav-item-6"];
+
+// navBar.forEach(el => el.innerHTML = siteContent["nav"][]);
+
+const heading = document.querySelector("h1");
+heading.innerHTML = siteContent["cta"]["h1"];
+heading.style.width = "175px";
+heading.style.marginRight = "60px";
+
+const btn = document.querySelector("button");
+btn.innerText = siteContent["cta"]["button"];
+
+const heading4 = document.querySelectorAll("h4");
+
+heading4[0].innerText = siteContent["main-content"]["features-h4"];
+heading4[1].innerText = siteContent["main-content"]["about-h4"];
+heading4[2].innerText = siteContent["main-content"]["services-h4"];
+heading4[3].innerText = siteContent["main-content"]["product-h4"];
+heading4[4].innerText = siteContent["main-content"]["vision-h4"];
+heading4[5].innerText = siteContent["contact"]["contact-h4"];
+
+
+const mainImage = document.getElementById("cta-img");
+mainImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const paragraphs = document.querySelectorAll("p");
+
+paragraphs[0].innerText = siteContent["main-content"]["features-content"];
+paragraphs[1].innerText = siteContent["main-content"]["about-content"];
+paragraphs[2].innerText = siteContent["main-content"]["services-content"];
+paragraphs[3].innerText = siteContent["main-content"]["product-content"];
+paragraphs[4].innerText = siteContent["main-content"]["vision-content"];
+paragraphs[5].innerText = siteContent["contact"]["address"];
+paragraphs[5].style.width = "150px";
+paragraphs[6].innerText = siteContent["contact"]["phone"];
+paragraphs[7].innerText = siteContent["contact"]["email"];
+paragraphs[8].innerText = siteContent["footer"]["copyright"];
+
+navBar.forEach(el => el.style.color = "green");
+
+const homeNav = document.createElement('a');
+homeNav.innerText = "Home";
+homeNav.style.color = 'green';
+
+const gamesNav = document.createElement('a');
+gamesNav.innerText = "Games";
+gamesNav.style.color = 'green';
+
+const navMenu = document.querySelector("nav");
+
+navMenu.prepend(homeNav);
+navMenu.appendChild(gamesNav);
+
+
+//stretch updating styles
